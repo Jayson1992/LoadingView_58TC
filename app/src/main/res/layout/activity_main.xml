@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.loadingview_58tc.PathView
+        android:id="@+id/pathView"
+        android:layout_width="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="25dp" />
+
+    <com.example.loadingview_58tc.ShadowView
+        android:id="@+id/shadowView"
+        android:layout_width="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/text"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_above="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="加载中..." />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="开始"
+        android:layout_above="@+id/stop" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="停止" />
+</RelativeLayout>
